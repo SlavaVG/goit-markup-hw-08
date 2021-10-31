@@ -1,0 +1,27 @@
+.clients_item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.clients_link {
+  @extend .dis-fl_d;
+  @extend .dis-fl_a;
+  @extend .dis-fl_j;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--clients-color);
+  border-radius: 4px;
+  fill: var(--clients-color);
+  transition: border 240ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hero-button);
+    fill: var(--hero-button);
+  }
+}
+.clients_icon {
+  width: 106px;
+  height: 60px;
+}

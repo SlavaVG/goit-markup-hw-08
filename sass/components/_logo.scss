@@ -1,0 +1,21 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-color);
+  transition: color 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.logo_indent--right{
+  margin-right: 93px;
+}
+.logo--dark {
+  color: var(--secondary-text-color);
+}
+.logo--light {
+  color: var(--primary-title-color);
+}

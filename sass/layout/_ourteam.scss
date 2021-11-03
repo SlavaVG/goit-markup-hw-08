@@ -1,6 +1,33 @@
 .ourteam {
   background: var(--filter-button-color);
 }
+.ourteam_list {
+  // @extend .dis-fl_d; /*отключил*/
+  // @extend .dis-fl_w; /*отключил*/
+  // margin-left: -15px;  /*margin-left: -30px;*/ 
+  margin-bottom: -30px; // margin-top: -30px;
+  @media screen and (min-width: 768px) {
+      display: flex; 
+      flex-wrap: wrap;
+      margin-left: -15px; 
+  }
+}
+
+.ourteam_item {
+  // flex-basis: calc(100% / 4 - 30px);
+  // margin-left: 15px;/*  margin-left: 30px; */
+  margin-bottom: 30px; /*margin-top: 30px;*/
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 15px;/*  margin-left: 30px; */
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 15px;/*  margin-left: 30px; */
+  }
+}
+
+
 .ourteam-card {
   background: var(--background-card);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

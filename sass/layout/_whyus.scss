@@ -1,21 +1,36 @@
 .whyus_container {
   @extend .dis-fl_d;
 }
-// .ourteam_list,
-// .clients_list, 
-//.wedoing_list,
+
 .whyus_list {
-  // @extend .dis-fl_d; /*отключил*/
-  // @extend .dis-fl_w; /*отключил*/
-  // margin-left: -15px;  /*margin-left: -30px;*/ 
+  @extend .dis-fl_d; /*отключил*/
+  @extend .dis-fl_w; /*отключил*/
+  justify-content: center;
+  margin-left: -30px; 
   margin-bottom: -30px; // margin-top: -30px;
 }
-// .ourteam_item,
-//.wedoing_item,
+
+
 .whyus_item {
-  flex-basis: calc(100% / 4 - 30px);
-  // margin-left: 15px;/*  margin-left: 30px; */
-  margin-bottom: 30px; /*margin-top: 30px;*/
+  // flex-basis: calc(100% / 4 - 30px);
+  // margin-left: 30px;
+  // margin-bottom: 30px; /*margin-top: 30px;*/
+  @media screen and (max-width: 767px) {
+    // flex-basis: calc(100% / 1 - 30px);
+    flex-basis: 100%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 .whyus_item-pkt {
   height: 120px;

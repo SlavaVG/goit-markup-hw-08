@@ -3,15 +3,15 @@
 }
 // .ourteam_list,
 // .clients_list, 
-.whyus_list,
-.wedoing_list {
+//.wedoing_list,
+.whyus_list {
   // @extend .dis-fl_d; /*отключил*/
   // @extend .dis-fl_w; /*отключил*/
   // margin-left: -15px;  /*margin-left: -30px;*/ 
   margin-bottom: -30px; // margin-top: -30px;
 }
 // .ourteam_item,
-.wedoing_item,
+//.wedoing_item,
 .whyus_item {
   flex-basis: calc(100% / 4 - 30px);
   // margin-left: 15px;/*  margin-left: 30px; */

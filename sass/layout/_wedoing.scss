@@ -1,5 +1,32 @@
+
+@media screen and (max-width: 1199px) {
+  .wedoing-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0); 
+
+  }
+}
+@media screen and (min-width: 1200px) {
 .wedoing {
   padding-top: 0px;
+}
+.wedoing_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px; 
+  margin-top: -30px;
+}
+.wedoing_item{
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .wedoing_item {
   position: relative;
@@ -20,4 +47,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
+}
 }

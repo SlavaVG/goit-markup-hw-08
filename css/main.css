@@ -226,19 +226,19 @@ body {
   color: var(--primary-title-color);
 }
 
-.dis-fl_d, .btn-close, .header_kontacts-flex, .header_link-item, .hero_container, .whyus_container, .whyus_list, .whyus_item-pkt, .ourteam-socital-list, .clients_list, .clients_link, .footer-section, .section-common_list, .filtr_list, .portofolio_list, .backdrop, .check_text, .check_text span {
+.dis-fl_d, .btn-close, .header_kontacts-flex, .header_link-item, .hero_container, .whyus_container, .whyus_list, .whyus_item-pkt, .ourteam-socital-list, .clients_list, .clients_link, .section-common_list, .filtr_list, .portofolio_list, .backdrop, .check_text, .check_text span {
   display: flex;
 }
 
-.dis-fl_a, .btn-close, .header_kontacts-flex, .header_link-item, .hero_container, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .section-common_list, .backdrop, .check_text, .check_text span {
+.dis-fl_a, .btn-close, .header_kontacts-flex, .header_link-item, .hero_container, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .backdrop, .check_text, .check_text span {
   align-items: center;
 }
 
-.dis-fl_j, .btn-close, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .section-common_list, .filtr_list, .backdrop, .check_text, .check_text span {
+.dis-fl_j, .btn-close, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .filtr_list, .backdrop, .check_text, .check_text span {
   justify-content: center;
 }
 
-.dis-fl_w, .whyus_list, .clients_list, .footer-section, .section-common_list, .filtr_list, .portofolio_list {
+.dis-fl_w, .whyus_list, .clients_list, .section-common_list, .filtr_list, .portofolio_list {
   flex-wrap: wrap;
 }
 
@@ -661,12 +661,30 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-section {
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer-section {
+    text-align: center;
+  }
 }
 
-.footer-section_item:not(:last-child) {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-section_item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section_item:not(:last-child) {
+    margin-right: 70px;
+  }
 }
 
 .footer-section_item:last-child {
@@ -674,8 +692,12 @@ body {
 }
 
 .section-common_list {
+  align-items: center;
+  justify-content: center;
   margin-left: -10px;
   margin-top: -30px;
+  width: 206px;
+  margin: 0 auto;
 }
 
 .section-common_title {

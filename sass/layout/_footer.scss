@@ -37,12 +37,25 @@
   margin-bottom: 9px;
 }
 .footer-section {
-  @extend .dis-fl_d;
-  @extend .dis-fl_w;
-  align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  } 
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    
+  } 
 }
 .footer-section_item:not(:last-child) {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+  margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  } 
 }
 .footer-section_item:last-child {
   margin-left: auto;
@@ -51,10 +64,15 @@
 .section-common_list {
   @extend .dis-fl_d;
   @extend .dis-fl_w;
-  @extend .dis-fl_a;
-  @extend .dis-fl_j;
+  align-items: center;
+  justify-content: center;
   margin-left: -10px;
   margin-top: -30px;
+  width: 206px;
+  margin: 0 auto;
+}
+.section-common_position{
+  margin: 0 auto;
 }
 
 .section-common_title {

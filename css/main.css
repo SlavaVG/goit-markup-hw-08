@@ -293,6 +293,8 @@ body {
 }
 
 .icon {
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
   fill: var(--primary-text-color);
   transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -695,9 +697,13 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: -10px;
-  margin-top: -30px;
   width: 206px;
-  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .section-common_position {
+    margin: 0 auto;
+  }
 }
 
 .section-common_title {
@@ -714,7 +720,6 @@ body {
   height: 44px;
   flex-basis: calc(100% / 4 - 10px);
   margin-left: 10px;
-  margin-top: 30px;
 }
 
 .section-common_item + .section-common_item {
@@ -784,9 +789,9 @@ body {
 .footer-mailing_btn {
   width: 200px;
   height: 50px;
-  padding-left: 29px;
+  padding-left: 0px;
   padding-top: 10px;
-  padding-right: 62px;
+  padding-right: 28px;
   padding-bottom: 10px;
 }
 
@@ -802,6 +807,21 @@ body {
 }
 
 .footer-mailing_icon:hover, .footer-mailing_icon:focus {
+  transform: rotate(25deg) translateX(-45%);
+}
+
+.footer-icon_send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 13px;
+  transform: translateY(-50%);
+  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*Шютка*/
+}
+
+.footer-icon_send:hover, .footer-icon_send:focus {
   transform: rotate(25deg) translateX(-45%);
 }
 

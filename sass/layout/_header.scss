@@ -8,12 +8,12 @@
     align-items: center;
     margin-right: auto;
     }
-    @media screen and (min-width: 481px)and (max-width: 1199px) {
+    @media screen and (min-width: 768px)and (max-width: 1199px) {
       display: flex;
       align-items: center;
       margin-right: auto;
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
 }
@@ -24,11 +24,11 @@
   align-items: center;
   margin-left: auto;
   }
-  @media screen and (min-width: 481px)and (max-width: 1199px) {
+  @media screen and (min-width: 768px)and (max-width: 1199px) {
     align-items: center;
     margin-left: auto;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
@@ -72,7 +72,7 @@
   @media screen and (min-width: 1200px) {
   margin-right: 50px; /* отступ между мылом и телефоном без последнего ребенка */
   }
-  @media screen and (min-width: 481px)and (max-width: 1199px) {
+  @media screen and (min-width: 480px)and (max-width: 1199px) {
   margin-bottom: 10px;
   }
 }
@@ -89,7 +89,7 @@
       fill: var(--accent-color);
     }
   }
-  @media screen and (min-width: 481px)and (max-width: 1199px) {
+  @media screen and (min-width: 480px)and (max-width: 1199px) {
     width: 14px;
     height: 10px;
     margin-right: 8px;
@@ -116,7 +116,7 @@
       fill: var(--accent-color);
     }
   }
-  @media screen and (min-width: 481px)and (max-width: 1199px) {
+  @media screen and (min-width: 480px)and (max-width: 1199px) {
     width: 10px;
     height: 14px;
     margin-right: 8px;

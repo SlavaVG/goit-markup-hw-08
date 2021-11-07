@@ -1,17 +1,47 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--accent-color);
   transition: color 240ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 1200px) {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--accent-color);
+    transition: color 240ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--accent-color);
+    transition: color 240ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
 .logo_indent--right{
-  margin-right: 93px;
+  margin-right: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
 }
 .logo--dark {
   color: var(--secondary-text-color);

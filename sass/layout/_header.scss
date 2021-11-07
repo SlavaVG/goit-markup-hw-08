@@ -1,12 +1,37 @@
-// @media screen and (min-width: 1200px) {
 .header {
   border-bottom: 1px solid var(--border-color);
 }
 
+.header_menu-flex {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    }
+    @media screen and (min-width: 481px)and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+}
+
 .header_kontacts-flex {
+  @media screen and (min-width: 1200px) {
   display: flex;
   align-items: center;
   margin-left: auto;
+  }
+  @media screen and (min-width: 481px)and (max-width: 1199px) {
+    align-items: center;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
 }
 
 .header_link {
@@ -44,20 +69,67 @@
   color: var(--primary-text-color);
 }
 .header_kontacts-sep:not(:last-child) {
+  @media screen and (min-width: 1200px) {
   margin-right: 50px; /* отступ между мылом и телефоном без последнего ребенка */
-}
-.icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-  transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .header_link-item:hover &,
-  .header_link-item:focus & {
-    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 481px)and (max-width: 1199px) {
+  margin-bottom: 10px;
   }
 }
+.icon_mail {
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header_link-item:hover &,
+    .header_link-item:focus & {
+      fill: var(--accent-color);
+    }
+  }
+  @media screen and (min-width: 481px)and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: var(--primary-text-color);
+    transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header_link-item:hover &,
+    .header_link-item:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.icon_tel {
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+    transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header_link-item:hover &,
+    .header_link-item:focus & {
+      fill: var(--accent-color);
+    }
+  }
+  @media screen and (min-width: 481px)and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    fill: var(--primary-text-color);
+    transition: fill 240ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header_link-item:hover &,
+    .header_link-item:focus & {
+      fill: var(--accent-color);
+    }
+  }
+}
+
 .header_link-item {
   display: flex;
   align-items: center;

@@ -6,6 +6,10 @@
 }
 .footer_contact {
   font-style: inherit;
+  @media screen and (max-width: 1199px) {
+  margin-bottom: 60px;
+  } 
+
 }
 .address {
   color: var(--third-text-color);
@@ -33,7 +37,7 @@
   margin-bottom: 20px;
 }
 .footer-list{
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 .footer_item:not(:last-child) {
@@ -51,29 +55,31 @@
   } 
 }
 .footer-section_tablet {
-  margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
   } 
-  @media screen and (min-width: 481px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     // flex-wrap: wrap;
     align-items: baseline;
   }
-
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  } 
 
 
 }
+
 .footer-section_item:not(:last-child) {
-  margin-bottom: 60px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
   margin-bottom: 60px;
   }  
   @media screen and (min-width: 768px) {
     margin-left: 76px;
-    margin-bottom: 60px;
+    margin-right: 91px;
+    // margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
@@ -81,8 +87,11 @@
 }
 .footer-section_item:last-child {
   margin-left: auto;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    margin-right: 89px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    // margin-right: 89px;
+    display: block;
+    margin: 0 auto;
     }
 
 }
@@ -97,10 +106,10 @@
   width: 206px;
 }
 .section-common_position{
-  margin: 0 auto;
+  // margin: 0 auto;
 
-    @media screen and (min-width: 1200px) {
-    margin: 0 auto;
+  @media screen and (max-width: 1199px) {
+  margin: 0 auto;
   } 
 
 }

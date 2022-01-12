@@ -1,7 +1,5 @@
 .filtr_list {
-  @extend .dis-fl_d;
-  @extend .dis-fl_w;
-  @extend .dis-fl_j;
+  @extend .dis-fl_djw;
   margin-bottom: 50px;
 }
 .filtr-item:not(:last-child) {

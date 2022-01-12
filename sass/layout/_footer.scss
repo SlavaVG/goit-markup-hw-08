@@ -97,8 +97,7 @@
 }
 
 .section-common_list {
-  @extend .dis-fl_d;
-  @extend .dis-fl_w;
+  @extend .dis-fl_dw;
   align-items: center;
   justify-content: center;
   margin-left: -10px;

@@ -2,8 +2,7 @@
   background: var(--filter-button-color);
 }
 .ourteam_list {
-  // @extend .dis-fl_d; /*отключил*/
-  // @extend .dis-fl_w; /*отключил*/
+  // @extend .dis-fl_dw; /*отключил*/
   // margin-left: -15px;  /*margin-left: -30px;*/ 
   margin-bottom: -30px; // margin-top: -30px;
   @media screen and (min-width: 768px) {
@@ -52,9 +51,7 @@
   margin-bottom: 16px;
 }
 .ourteam-socital-list {
-  @extend .dis-fl_d;
-  @extend .dis-fl_a;
-  @extend .dis-fl_j;
+  @extend .dis-fl_daj;
 }
 .ourteam-socital-item + .ourteam-socital-item {
   margin-left: 10px;

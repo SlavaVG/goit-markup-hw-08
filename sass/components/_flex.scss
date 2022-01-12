@@ -1,15 +1,30 @@
-.dis-fl_d{
+// .dis-fl_d{
+//   display: flex;
+// }
+// .dis-fl_a{
+//   align-items: center;
+// }
+// .dis-fl_j{
+//   justify-content: center;
+// }
+// .dis-fl_w{
+//   flex-wrap: wrap;
+// }
+.dis-fl_da{
   display: flex;
-}
-.dis-fl_a{
   align-items: center;
 }
-.dis-fl_j{
-  justify-content: center;
-}
-.dis-fl_w{
+.dis-fl_dw{
+  display: flex;
   flex-wrap: wrap;
 }
-.dis-fl_w{
+.dis-fl_daj{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dis-fl_djw{
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }

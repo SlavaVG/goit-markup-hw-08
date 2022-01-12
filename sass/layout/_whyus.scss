@@ -3,8 +3,7 @@
 }
 
 .whyus_list {
-  @extend .dis-fl_d; /*отключил*/
-  @extend .dis-fl_w; /*отключил*/
+  @extend .dis-fl_dw; /*отключил*/
   justify-content: center;
   margin-left: -30px; 
   margin-bottom: -30px; // margin-top: -30px;
@@ -36,9 +35,7 @@
   height: 120px;
   background-color: var(--filter-button-color);
   border-radius: 4px;
-  @extend .dis-fl_d;
-  @extend .dis-fl_a;
-  @extend .dis-fl_j;
+  @extend .dis-fl_daj;
   margin-bottom: 30px;
 }
 .whyus_pkt-item {

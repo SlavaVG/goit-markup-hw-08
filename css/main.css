@@ -266,23 +266,41 @@ body {
   color: var(--primary-title-color);
 }
 
-.dis-fl_d, .btn-close, .hero_container, .whyus_container, .whyus_list, .whyus_item-pkt, .ourteam-socital-list, .clients_list, .clients_link, .section-common_list, .filtr_list, .portofolio_list, .backdrop, .check_text, .check_text span {
+.dis-fl_d, .whyus_container {
   display: flex;
 }
 
-.dis-fl_a, .btn-close, .hero_container, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .backdrop, .check_text, .check_text span {
+.dis-fl_a {
   align-items: center;
 }
 
-.dis-fl_j, .btn-close, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .filtr_list, .backdrop, .check_text, .check_text span {
+.dis-fl_j {
   justify-content: center;
 }
 
-.dis-fl_w, .whyus_list, .clients_list, .section-common_list, .filtr_list, .portofolio_list {
+.dis-fl_w {
   flex-wrap: wrap;
 }
 
-.dis-fl_w, .whyus_list, .clients_list, .section-common_list, .filtr_list, .portofolio_list {
+.dis-fl_da, .hero_container {
+  display: flex;
+  align-items: center;
+}
+
+.dis-fl_dw, .whyus_list, .clients_list, .section-common_list, .portofolio_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dis-fl_daj, .btn-close, .whyus_item-pkt, .ourteam-socital-list, .clients_link, .backdrop, .check_text, .check_text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dis-fl_djw, .filtr_list {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -331,6 +349,27 @@ body {
 @media screen and (max-width: 767px) {
   .header_kontacts-flex {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header_burger-flex {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header_burger-flex {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_burger-flex {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
   }
 }
 
@@ -497,7 +536,6 @@ body {
 }
 
 .whyus_list {
-  /*отключил*/
   /*отключил*/
   justify-content: center;
   margin-left: -30px;
@@ -702,7 +740,6 @@ body {
 }
 
 .clients_list {
-  /*отключил*/
   /*отключил*/
   margin-left: -30px;
   margin-top: -30px;
